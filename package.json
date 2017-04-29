@@ -1,0 +1,14 @@
+{
+  "name": "signalk-simulator",
+  "version": "0.0.1",
+  "description": "Signal K Node Server plugin to simulate different inputs",
+  "main": "index.js",
+  "keywords": [
+    "signalk-node-server-plugin"
+  ],
+  "author": "teppo.kurki@iki.fi",
+  "license": "ISC",
+  "dependencies": {
+    "debug": "^2.6.6"
+  }
+}
