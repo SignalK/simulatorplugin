@@ -30,10 +30,10 @@ module.exports = function(app) {
             values: [
               {
                 path: item.path,
-                value: item.minValue + (
-                  ((new Date().getTime() - start) / 1000) % (item.dataPeriod || 60))
-                  / (item.dataPeriod || 60)
-                  * (item.maxValue - item.minValue)
+                value: item.minValue +
+                  Math.abs((((new Date().getTime() - start) / 1000) % (item.dataPeriod || 60))
+                  / (item.dataPeriod || 60) - 0.5)
+                  * 2 * (item.maxValue - item.minValue)
               }
             ]
           }
