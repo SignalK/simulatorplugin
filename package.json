@@ -1,5 +1,5 @@
 {
-  "name": "signalk-simulator",
+  "name": "@signalk/simulatorplugin",
   "version": "0.0.1",
   "description": "Signal K Node Server plugin to simulate different inputs",
   "main": "index.js",
